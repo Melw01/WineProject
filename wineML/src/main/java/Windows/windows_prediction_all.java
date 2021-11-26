@@ -32,8 +32,8 @@ public class windows_prediction_all {
 
 		JavaSparkContext jsc = new JavaSparkContext(spark.sparkContext());
 
-		String path_testing = args[0];
-		//String path_testing = "C:\\NJIT\\03_Fall_2021\\CS643-Sec851_Cloud_Computing\\ProgrammingAssignment2\\TrainingDataset.csv";
+		//String path_testing = args[0];
+		String path_testing = "C:\\NJIT\\03_Fall_2021\\CS643-Sec851_Cloud_Computing\\ProgrammingAssignment2\\TestingDataset.csv";
 		
 		JavaRDD<String> data_testing = jsc.textFile(path_testing);
 

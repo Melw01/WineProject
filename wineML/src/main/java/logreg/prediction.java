@@ -29,7 +29,7 @@ public class prediction {
 
 		JavaSparkContext jsc = new JavaSparkContext(spark.sparkContext());
 
-		String path_testing = "/user/TrainingDataset.csv";					//change to testingdataset later on
+		String path_testing = "/user/TestingDataset.csv";					//change to testingdataset later on
 		
 		JavaRDD<String> data_testing = jsc.textFile(path_testing);
 
